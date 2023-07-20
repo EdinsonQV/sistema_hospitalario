@@ -1,8 +1,11 @@
-<build>
-    <plugins>
-        <!-- ... otros plugins ... -->
-        <plugin>
-            <groupId>org.codehaus.mojo</groupId>
+<!-- https://mvnrepository.com/artifact/maven-plugins/maven-cobertura-plugin -->
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+        <plugins>
+            <!-- Plugin de Cobertura para el análisis de cobertura -->
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
             <artifactId>cobertura-maven-plugin</artifactId>
             <version>2.7</version>
             <configuration>
@@ -19,7 +22,9 @@
                     </goals>
                 </execution>
             </executions>
-        </plugin>
-        <!-- ... otros plugins ... -->
-    </plugins>
-</build>
+            </plugin>
+            <!-- Otros plugins que puedas tener -->
+        </plugins>
+    </build>
+    <!-- Resto del archivo pom.xml -->
+</project>
