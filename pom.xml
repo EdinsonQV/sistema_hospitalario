@@ -5,8 +5,14 @@
          <groupId>com.sistemh</groupId>
          <artifactId>sistema-hospitalario</artifactId>
          <version>1.0.0</version>
+    <properties>
+        <!-- Otras propiedades de tu proyecto -->
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+    </properties>
 
     <build>
+             <sourceDirectory>src</sourceDirectory>
         <plugins>
             <!-- Plugin de Cobertura para el análisis de cobertura -->
             <plugin>
